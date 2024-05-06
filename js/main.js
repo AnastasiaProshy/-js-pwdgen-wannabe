@@ -22,20 +22,20 @@ Birthday: ${Bday}
 console.log(output);
 
 const pWord = ` Suggested password: ${firstName}${lastName}${color}`;
-
+console.log(pWord);
 //DOM output
 // console.log(pWord);
 // document.getElementById('PW').innerHTML = pWord;
 //OPERATION
 // const pWordN = ``;
 
-const pwN = `${BYear} / ${Bday}`;
-
-console.log(pwN);
+const pwN = BYear / Bday;
+const rounded = pwN.toFixed(2)
+console.log(rounded);
 
 // Concatenazione di pWord e pwN
 
-const pWordN = ${ pWord }+${ pwN };
+const pWordN = pWord + pwN;
 
 console.log(pWordN);
 
