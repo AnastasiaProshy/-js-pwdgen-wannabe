@@ -5,14 +5,14 @@ const color = prompt('Please enter your favorite color');
 // //OUTPUT STRING******************
 const output = `
 
-// ******Dates*******
+******Dates*******
 
-// name: ${firstName}
-// surname: ${lastName}
-// color: ${color}
+name: ${firstName}
+surname: ${lastName}
+color: ${color}
 
-// ******Generate Password******
-// `;
+******Generate Password******
+`;
 
 
 console.log(output);
