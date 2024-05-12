@@ -21,11 +21,10 @@ Let's generate password:
 console.log(output);
 
 const pWord = `Suggested password: ${firstName}${lastName}${color}`;
-const pwN = BYear / Bday;
-const pwNround = pwN.toFixed(0) //arrotondamento
+const pwN = (BYear / Bday).toFixed(0);
 
 // Concatenazione di pWord e pwN
-const pWordN = pWord + pwNround;
+const pWordN = pWord + pwN;
 console.log(pWordN);
 document.getElementById('PW').innerText = pWordN;
 
