@@ -6,7 +6,7 @@ const Bday = prompt(`Write down the day you were born`);
 
 //OUTPUT STRING******************
 const output = `
-
+x
 ******Dates*******
 
 name: ${firstName}
@@ -17,27 +17,25 @@ Birthday: ${Bday}
 
 ******Generate Password******
 `;
-
-
 console.log(output);
 
-const pWord = ` Suggested password: ${firstName}${lastName}${color}`;
-console.log(pWord);
+const pWord = `Suggested password: ${firstName}${lastName}${color}`;
+const pwN = BYear / Bday;
+
+// Concatenazione di pWord e pwN
+const pWordN = pWord + pwN;
+console.log(pWordN);
+document.getElementById('PW').innerHTML = pWordN;
+
+
+
+
+// const pwNround = pwN.toFixed(2)
+// console.log(pwNround);
 //DOM output
 // console.log(pWord);
 // document.getElementById('PW').innerHTML = pWord;
 //OPERATION
 // const pWordN = ``;
 
-const pwN = BYear / Bday;
-const rounded = pwN.toFixed(2)
-console.log(rounded);
-
-// Concatenazione di pWord e pwN
-
-const pWordN = pWord + pwN;
-
-console.log(pWordN);
-
-document.getElementById('PW').innerHTML = pWordN;
 
